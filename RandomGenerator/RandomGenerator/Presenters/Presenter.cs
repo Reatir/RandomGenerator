@@ -8,11 +8,13 @@ using System.Threading.Tasks;
 
 namespace RandomGenerator.Presenters
 {
+    //Transmet les informations entre le model(code metier) et la  view(interface)
     public class Presenter
     {
         private Model model;
         private RandomGeneratorView view;
 
+        //constructeur permettant de relier les differentes parties
         public Presenter(Model model_, RandomGeneratorView view_)
         {
             this.model = model_;
@@ -21,6 +23,7 @@ namespace RandomGenerator.Presenters
             view._Presenter = this;
         }
 
+        //Code premettant de recuperer les information de l'interface et les transfere au model
         public void OnTopLimitChanged(int nb_)
         {
             model._TopLimit = nb_;
@@ -37,6 +40,8 @@ namespace RandomGenerator.Presenters
             UpdateView();
         }
 
+
+        //Fonction permettant au model d'agir sur l'interface
         private void UpdateView()
         {
             view.UpdateView(model._Result);

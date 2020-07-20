@@ -44,6 +44,7 @@ namespace RandomGenerator
 
         private void btGenerate_Click(object sender, EventArgs e)
         {
+
             _Presenter.OnGenerateClicked();
         }
 

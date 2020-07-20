@@ -19,6 +19,8 @@ namespace RandomGenerator
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            //Initialisation des differente partie du MVP
+
             Model model = new Model();
 
             RandomGeneratorView view = new RandomGeneratorView();

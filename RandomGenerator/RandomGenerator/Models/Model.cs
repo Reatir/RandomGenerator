@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace RandomGenerator.Models
 {
+
+    //Code metier
     public class Model
     {
       
