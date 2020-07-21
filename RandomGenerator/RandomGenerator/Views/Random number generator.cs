@@ -4,13 +4,13 @@ using System.Windows.Forms;
 
 namespace RandomGenerator
 {
-    public partial class RandomGeneratorView : Form
+    public partial class RandomNumberGeneratorView : Form
     {
-        public Presenter _Presenter { get; set; }
+        public PresenterRandomNumberGenerator _Presenter { get; set; }
 
 
 
-        public RandomGeneratorView()
+        public RandomNumberGeneratorView()
         {
             InitializeComponent();
         }
@@ -51,6 +51,21 @@ namespace RandomGenerator
         public  void UpdateView(int result_)
         {
             lblResult.Text = result_.ToString();
+        }
+
+        private void MenuItemPickNumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuItemPickString_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuItemSortList_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

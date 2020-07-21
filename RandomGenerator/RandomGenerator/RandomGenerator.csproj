@@ -46,18 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Model.cs" />
-    <Compile Include="Presenters\Presenter.cs" />
-    <Compile Include="Random generator.cs">
+    <Compile Include="Models\ModelRandomNumberGenerator.cs" />
+    <Compile Include="Presenters\PresenterRandomNumberGenerator.cs" />
+    <Compile Include="Views\Random number generator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Random generator.Designer.cs">
-      <DependentUpon>Random generator.cs</DependentUpon>
+    <Compile Include="Views\Random number generator.Designer.cs">
+      <DependentUpon>Random number generator.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Random generator.resx">
-      <DependentUpon>Random generator.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Random number generator.resx">
+      <DependentUpon>Random number generator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,8 +81,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

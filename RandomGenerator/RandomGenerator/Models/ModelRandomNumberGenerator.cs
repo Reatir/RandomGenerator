@@ -8,7 +8,7 @@ namespace RandomGenerator.Models
 {
 
     //Code metier
-    public class Model
+    public class ModelRandomNumberGenerator
     {
       
 
@@ -18,7 +18,7 @@ namespace RandomGenerator.Models
 
         public List<string> ListResult { get; private set ; }
 
-        public Model()
+        public ModelRandomNumberGenerator()
         {
             ListResult = new List<string>();
         }

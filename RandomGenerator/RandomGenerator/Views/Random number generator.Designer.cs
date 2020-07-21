@@ -1,6 +1,6 @@
 ﻿namespace RandomGenerator
 {
-    partial class RandomGeneratorView
+    partial class RandomNumberGeneratorView
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -35,12 +35,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
             this.btGenerate = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuItemPickNumber = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemPickString = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuItemSortList = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(25, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 0;
@@ -49,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 41);
+            this.label2.Location = new System.Drawing.Point(24, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 1;
@@ -57,7 +62,7 @@
             // 
             // txtBotLimit
             // 
-            this.txtBotLimit.Location = new System.Drawing.Point(86, 5);
+            this.txtBotLimit.Location = new System.Drawing.Point(98, 56);
             this.txtBotLimit.Name = "txtBotLimit";
             this.txtBotLimit.Size = new System.Drawing.Size(100, 20);
             this.txtBotLimit.TabIndex = 2;
@@ -65,7 +70,7 @@
             // 
             // txtTopLimit
             // 
-            this.txtTopLimit.Location = new System.Drawing.Point(86, 38);
+            this.txtTopLimit.Location = new System.Drawing.Point(98, 89);
             this.txtTopLimit.Name = "txtTopLimit";
             this.txtTopLimit.Size = new System.Drawing.Size(100, 20);
             this.txtTopLimit.TabIndex = 3;
@@ -74,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 79);
+            this.label3.Location = new System.Drawing.Point(25, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 4;
@@ -83,20 +88,53 @@
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(86, 79);
+            this.lblResult.Location = new System.Drawing.Point(98, 130);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(0, 13);
             this.lblResult.TabIndex = 5;
             // 
             // btGenerate
             // 
-            this.btGenerate.Location = new System.Drawing.Point(16, 124);
+            this.btGenerate.Location = new System.Drawing.Point(28, 175);
             this.btGenerate.Name = "btGenerate";
             this.btGenerate.Size = new System.Drawing.Size(170, 23);
             this.btGenerate.TabIndex = 6;
             this.btGenerate.Text = "Generate";
             this.btGenerate.UseVisualStyleBackColor = true;
             this.btGenerate.Click += new System.EventHandler(this.btGenerate_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuItemPickNumber,
+            this.MenuItemPickString,
+            this.MenuItemSortList});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // MenuItemPickNumber
+            // 
+            this.MenuItemPickNumber.Name = "MenuItemPickNumber";
+            this.MenuItemPickNumber.Size = new System.Drawing.Size(104, 20);
+            this.MenuItemPickNumber.Text = "Tirer un nombre";
+            this.MenuItemPickNumber.Click += new System.EventHandler(this.MenuItemPickNumber_Click);
+            // 
+            // MenuItemPickString
+            // 
+            this.MenuItemPickString.Name = "MenuItemPickString";
+            this.MenuItemPickString.Size = new System.Drawing.Size(103, 20);
+            this.MenuItemPickString.Text = "Tirer une chaine";
+            this.MenuItemPickString.Click += new System.EventHandler(this.MenuItemPickString_Click);
+            // 
+            // MenuItemSortList
+            // 
+            this.MenuItemSortList.Name = "MenuItemSortList";
+            this.MenuItemSortList.Size = new System.Drawing.Size(152, 20);
+            this.MenuItemSortList.Text = "Trier une liste en aléatoire";
+            this.MenuItemSortList.Click += new System.EventHandler(this.MenuItemSortList_Click);
             // 
             // RandomGeneratorView
             // 
@@ -110,8 +148,12 @@
             this.Controls.Add(this.txtBotLimit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "RandomGeneratorView";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,6 +168,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btGenerate;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemPickNumber;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemPickString;
+        private System.Windows.Forms.ToolStripMenuItem MenuItemSortList;
     }
 }
 

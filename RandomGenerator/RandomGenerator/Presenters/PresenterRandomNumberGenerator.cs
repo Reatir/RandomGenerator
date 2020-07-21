@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 namespace RandomGenerator.Presenters
 {
     //Transmet les informations entre le model(code metier) et la  view(interface)
-    public class Presenter
+    public class PresenterRandomNumberGenerator
     {
-        private Model model;
-        private RandomGeneratorView view;
+        private ModelRandomNumberGenerator model;
+        private RandomNumberGeneratorView view;
 
         //constructeur permettant de relier les differentes parties
-        public Presenter(Model model_, RandomGeneratorView view_)
+        public PresenterRandomNumberGenerator(ModelRandomNumberGenerator model_, RandomNumberGeneratorView view_)
         {
             this.model = model_;
             this.view = view_;

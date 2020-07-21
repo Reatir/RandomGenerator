@@ -21,11 +21,11 @@ namespace RandomGenerator
 
             //Initialisation des differente partie du MVP
 
-            Model model = new Model();
+            ModelRandomNumberGenerator model = new ModelRandomNumberGenerator();
 
-            RandomGeneratorView view = new RandomGeneratorView();
+            RandomNumberGeneratorView view = new RandomNumberGeneratorView();
 
-            Presenter presenter = new Presenter(model,view);
+            PresenterRandomNumberGenerator presenter = new PresenterRandomNumberGenerator(model,view);
 
             Application.Run(view);
         }
