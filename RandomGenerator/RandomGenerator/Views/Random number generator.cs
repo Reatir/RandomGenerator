@@ -44,8 +44,15 @@ namespace RandomGenerator
 
         private void btGenerate_Click(object sender, EventArgs e)
         {
-
-            _Presenter.OnGenerateClicked();
+            if(txtBotLimit.Text != "" && txtTopLimit.Text !="" )
+            {
+                _Presenter.OnGenerateClicked();
+            }
+            else
+            {
+                MessageBox.Show("Le champ des bornes ne doivent pas être laisser vide");
+            }
+           
         }
 
         public  void UpdateView(int result_)

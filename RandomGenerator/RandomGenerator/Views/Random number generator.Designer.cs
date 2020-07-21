@@ -136,7 +136,7 @@
             this.MenuItemSortList.Text = "Trier une liste en aléatoire";
             this.MenuItemSortList.Click += new System.EventHandler(this.MenuItemSortList_Click);
             // 
-            // RandomGeneratorView
+            // RandomNumberGeneratorView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,7 +150,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "RandomGeneratorView";
+            this.Name = "RandomNumberGeneratorView";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
