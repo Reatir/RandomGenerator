@@ -39,6 +39,7 @@
             this.MenuItemPickNumber = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemPickString = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemSortList = new System.Windows.Forms.ToolStripMenuItem();
+            this.PanelListResult = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,11 +137,21 @@
             this.MenuItemSortList.Text = "Trier une liste en aléatoire";
             this.MenuItemSortList.Click += new System.EventHandler(this.MenuItemSortList_Click);
             // 
+            // PanelListResult
+            // 
+            this.PanelListResult.AutoScroll = true;
+            this.PanelListResult.Location = new System.Drawing.Point(588, 27);
+            this.PanelListResult.Name = "PanelListResult";
+            this.PanelListResult.Size = new System.Drawing.Size(200, 411);
+            this.PanelListResult.TabIndex = 8;
+            // 
             // RandomNumberGeneratorView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PanelListResult);
             this.Controls.Add(this.btGenerate);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.label3);
@@ -172,6 +183,7 @@
         private System.Windows.Forms.ToolStripMenuItem MenuItemPickNumber;
         private System.Windows.Forms.ToolStripMenuItem MenuItemPickString;
         private System.Windows.Forms.ToolStripMenuItem MenuItemSortList;
+        private System.Windows.Forms.FlowLayoutPanel PanelListResult;
     }
 }
 

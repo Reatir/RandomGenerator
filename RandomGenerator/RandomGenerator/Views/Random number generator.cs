@@ -60,6 +60,13 @@ namespace RandomGenerator
             lblResult.Text = result_.ToString();
         }
 
+        public void UpdatePanelList(int result_)
+        {
+            Label label = new Label();
+            label.Text = result_.ToString();
+            PanelListResult.Controls.Add(label);
+        }
+
         private void MenuItemPickNumber_Click(object sender, EventArgs e)
         {
 

@@ -38,6 +38,7 @@ namespace RandomGenerator.Presenters
         {
             model.GenerateRandomNumber();
             UpdateView();
+            UpdatePanel();
         }
 
 
@@ -47,6 +48,10 @@ namespace RandomGenerator.Presenters
             view.UpdateView(model._Result);
         }
 
+        private void UpdatePanel()
+        {
+            view.UpdatePanelList(model._Result);
+        }
 
     }
 }
