@@ -41,7 +41,6 @@ namespace RandomGenerator.Presenters
             UpdatePanel();
         }
 
-
         //Fonction permettant au model d'agir sur l'interface
         private void UpdateView()
         {

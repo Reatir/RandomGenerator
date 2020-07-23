@@ -1,4 +1,6 @@
-﻿using RandomGenerator.Presenters;
+﻿using RandomGenerator.Models;
+using RandomGenerator.Presenters;
+using RandomGenerator.Views;
 using System;
 using System.Windows.Forms;
 
@@ -73,8 +75,13 @@ namespace RandomGenerator
         }
 
         private void MenuItemPickString_Click(object sender, EventArgs e)
-        {
+        {        
+            ModelRandomStringGenerator model = new ModelRandomStringGenerator();
+            ViewRandomStringGenerator view = new ViewRandomStringGenerator();
 
+            PresenterRandomStringGenerator presenter = new PresenterRandomStringGenerator(view, model);
+            view.Visible = true;
+            this.Visible = false;
         }
 
         private void MenuItemSortList_Click(object sender, EventArgs e)

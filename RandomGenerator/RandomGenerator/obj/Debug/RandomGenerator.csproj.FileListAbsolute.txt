@@ -8,3 +8,4 @@ D:\prog\C#\RandomGenerator\RandomGenerator\RandomGenerator\obj\Debug\RandomGener
 D:\prog\C#\RandomGenerator\RandomGenerator\RandomGenerator\obj\Debug\RandomGenerator.exe
 D:\prog\C#\RandomGenerator\RandomGenerator\RandomGenerator\obj\Debug\RandomGenerator.pdb
 D:\prog\C#\RandomGenerator\RandomGenerator\RandomGenerator\obj\Debug\RandomGenerator.RandomNumberGeneratorView.resources
+D:\prog\C#\RandomGenerator\RandomGenerator\RandomGenerator\obj\Debug\RandomGenerator.Views.ViewRandomStringGenerator.resources
